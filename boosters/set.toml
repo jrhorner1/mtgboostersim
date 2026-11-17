@@ -1,0 +1,58 @@
+id = "set"
+name = "Set Booster"
+description = "13 cards, one of which is foil."
+order = 20
+random_foils = 1
+
+[[availability]]
+first_set = "Zendikar Rising (2020)"
+last_set = "The Lost Caverns of Ixalan (2023)"
+from = "2020-09-25"
+before = "2024-02-09"
+set_types = ["expansion", "core", "draft_innovation"]
+
+[[slots]]
+label = "Art Card"
+source = "art_card"
+placeholder = "Art Card"
+
+[[slots]]
+label = "Basic Land"
+source = "basic_land"
+
+# Six commons and uncommons, most often four and two.
+[[slots]]
+label = "Uncommon"
+source = "uncommon"
+count_weights = { 1 = 15, 2 = 45, 3 = 30, 4 = 10 }
+
+[[slots]]
+label = "Common"
+source = "common"
+complement_of_previous = 6
+
+[[slots]]
+label = "Showcase / Alt-Art"
+source = "common_uncommon"
+treatment = "any"
+
+[[slots]]
+label = "Wildcard"
+source = "wildcard"
+count = 2
+treatment_odds = 0.15
+
+[[slots]]
+label = "Rare / Mythic"
+source = "rare_mythic"
+
+[[slots]]
+label = "Token / Ad"
+source = "token"
+placeholder = "Ad Card"
+random_foil_eligible = false
+
+  [[slots.replace]]
+  odds = 0.25
+  source = "placeholder"
+  placeholder = "Ad Card"

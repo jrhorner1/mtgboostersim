@@ -1,0 +1,73 @@
+id = "collector"
+name = "Collector Booster"
+description = "15 cards plus a foil token. Contents varied from set to set; this is the typical layout."
+order = 30
+
+[[availability]]
+first_set = "Throne of Eldraine (2019)"
+last_set = "The Lost Caverns of Ixalan (2023)"
+from = "2019-10-04"
+before = "2024-02-09"
+set_types = ["expansion", "core", "draft_innovation"]
+
+# Masters sets gained Collector Boosters with Double Masters 2022.
+[[availability]]
+from = "2022-07-08"
+before = "2024-02-09"
+set_types = ["masters"]
+
+[[slots]]
+label = "Foil Common"
+source = "common"
+count = 5
+foil = true
+
+[[slots]]
+label = "Foil Uncommon"
+source = "uncommon"
+count = 2
+foil = true
+
+[[slots]]
+label = "Foil Rare / Mythic"
+source = "rare_mythic"
+foil = true
+
+[[slots]]
+label = "Extended-Art Rare / Mythic"
+source = "rare_mythic"
+treatment = "extended"
+
+[[slots]]
+label = "Showcase Rare / Mythic"
+source = "rare_mythic"
+treatment = "showcase"
+
+[[slots]]
+label = "Foil Special Rare / Mythic"
+source = "rare_mythic"
+treatment = "any"
+foil = true
+
+[[slots]]
+label = "Showcase Common / Uncommon"
+source = "common_uncommon"
+treatment = "any"
+count = 2
+
+[[slots]]
+label = "Foil Showcase Common / Uncommon"
+source = "common_uncommon"
+treatment = "any"
+foil = true
+
+[[slots]]
+label = "Full-Art / Special Land"
+source = "special_land"
+foil = true
+
+[[slots]]
+label = "Foil Token"
+source = "token"
+foil = true
+placeholder = "Double-Sided Token"

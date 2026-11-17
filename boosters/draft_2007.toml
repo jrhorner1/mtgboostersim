@@ -1,0 +1,40 @@
+id = "draft"
+name = "Draft Booster"
+description = "15 cards plus a token or tips card. No mythic rares or basic land slot yet."
+order = 10
+
+[[availability]]
+first_set = "Tenth Edition (2007)"
+last_set = "Eventide (2008)"
+from = "2007-07-13"
+before = "2008-10-03"
+
+[[slots]]
+label = "Rare"
+source = "rare"
+
+[[slots]]
+label = "Uncommon"
+source = "uncommon"
+count = 3
+
+[[slots]]
+label = "Common"
+source = "common"
+count = 11
+
+  [[slots.replace]]
+  odds = 0.3333
+  label = "Foil"
+  source = "wildcard"
+  foil = true
+
+[[slots]]
+label = "Token / Tips"
+source = "token"
+placeholder = "Tips Card"
+
+  [[slots.replace]]
+  odds = 0.25
+  source = "placeholder"
+  placeholder = "Tips Card"

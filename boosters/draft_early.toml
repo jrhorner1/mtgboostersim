@@ -1,0 +1,30 @@
+id = "draft"
+name = "Early Draft Booster"
+description = "15 cards. Foils appear from Urza's Legacy onward."
+order = 10
+
+[[availability]]
+first_set = "Limited Edition Alpha (1993)"
+last_set = "Future Sight (2007)"
+before = "2007-07-13"
+
+[[slots]]
+label = "Rare"
+source = "rare"
+
+[[slots]]
+label = "Uncommon"
+source = "uncommon"
+count = 3
+
+# The foil only applies to sets that were printed with foils.
+[[slots]]
+label = "Common"
+source = "common"
+count = 11
+
+  [[slots.replace]]
+  odds = 0.3333
+  label = "Foil"
+  source = "wildcard"
+  foil = true

@@ -1,0 +1,32 @@
+# A per-set definition: it shares the "masters" id and names its sets, so it
+# takes the place of masters.toml for them.
+id = "masters"
+name = "Masters Draft Booster"
+description = "15 cards with two rares and two foils."
+order = 10
+
+[[availability]]
+first_set = "Double Masters (2020)"
+last_set = "Double Masters 2022 (2022)"
+sets = ["2xm", "2x2"]
+
+[[slots]]
+label = "Rare / Mythic"
+source = "rare_mythic"
+count = 2
+
+[[slots]]
+label = "Uncommon"
+source = "uncommon"
+count = 3
+
+[[slots]]
+label = "Common"
+source = "common"
+count = 8
+
+[[slots]]
+label = "Foil"
+source = "wildcard"
+count = 2
+foil = true

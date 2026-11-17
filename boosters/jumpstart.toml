@@ -1,0 +1,31 @@
+id = "jumpstart"
+name = "Jumpstart Booster"
+description = "20 cards around one theme. Scryfall has no theme lists, so a theme is approximated by a single color."
+order = 10
+exclusive = true
+theme = "color"
+
+[[availability]]
+first_set = "Jumpstart (2020)"
+name_contains = "Jumpstart"
+
+[[slots]]
+label = "Rare / Mythic"
+source = "rare_mythic"
+
+# A second rare replaces one of these in about a third of packs.
+[[slots]]
+label = "Common / Uncommon"
+source = "common_uncommon"
+count = 11
+
+  [[slots.replace]]
+  odds = 0.3333
+  label = "Rare / Mythic"
+  source = "rare_mythic"
+
+[[slots]]
+label = "Basic Land"
+source = "basic_land"
+count = 8
+identical = true

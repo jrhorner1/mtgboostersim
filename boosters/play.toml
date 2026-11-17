@@ -1,0 +1,67 @@
+id = "play"
+name = "Play Booster"
+description = "15 cards, including a token, ad or art card."
+order = 10
+mythic_odds = 0.1429
+
+[[availability]]
+first_set = "Murders at Karlov Manor (2024)"
+from = "2024-02-09"
+
+# Six guaranteed commons plus a seventh that may instead be a Special Guest
+# or, before Bloomburrow, a card from The List.
+[[slots]]
+label = "Common"
+source = "common"
+count = 7
+
+  [[slots.replace]]
+  odds = 0.015625
+  label = "Special Guest"
+  source = "special_guest"
+
+  [[slots.replace]]
+  odds = 0.125
+  label = "The List"
+  source = "list"
+  set_before = "2024-08-02"
+
+[[slots]]
+label = "Uncommon"
+source = "uncommon"
+count = 3
+
+[[slots]]
+label = "Rare / Mythic"
+source = "rare_mythic"
+
+[[slots]]
+label = "Wildcard"
+source = "wildcard"
+treatment_odds = 0.15
+
+[[slots]]
+label = "Foil Wildcard"
+source = "wildcard"
+foil = true
+treatment_odds = 0.15
+
+[[slots]]
+label = "Basic Land"
+source = "basic_land"
+
+# Art card half the time, otherwise a token or an ad card.
+[[slots]]
+label = "Token / Ad"
+source = "token"
+placeholder = "Ad Card"
+
+  [[slots.replace]]
+  odds = 0.5
+  label = "Art Card"
+  source = "art_card"
+
+  [[slots.replace]]
+  odds = 0.125
+  source = "placeholder"
+  placeholder = "Ad Card"

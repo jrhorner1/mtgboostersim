@@ -1,0 +1,30 @@
+id = "masters"
+name = "Masters Draft Booster"
+description = "15 cards with a foil in every pack and no basic land."
+order = 10
+
+[[availability]]
+first_set = "Modern Masters (2013)"
+last_set = "Ravnica Remastered (2024)"
+from = "2013-06-07"
+before = "2024-02-09"
+set_types = ["masters"]
+
+[[slots]]
+label = "Rare / Mythic"
+source = "rare_mythic"
+
+[[slots]]
+label = "Uncommon"
+source = "uncommon"
+count = 3
+
+[[slots]]
+label = "Common"
+source = "common"
+count = 10
+
+[[slots]]
+label = "Foil"
+source = "wildcard"
+foil = true

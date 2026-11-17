@@ -1,0 +1,57 @@
+id = "collector"
+name = "Collector Booster"
+description = "15 cards plus a foil token; 10-12 of the cards are foil."
+order = 30
+mythic_odds = 0.1429
+
+[[availability]]
+first_set = "Murders at Karlov Manor (2024)"
+from = "2024-02-09"
+
+[[slots]]
+label = "Foil Common"
+source = "common"
+count = 4
+foil = true
+
+# Four or five uncommons: half the time the fifth gives way to a sixth
+# rare or mythic.
+[[slots]]
+label = "Foil Uncommon"
+source = "uncommon"
+count = 5
+foil = true
+
+  [[slots.replace]]
+  odds = 0.5
+  label = "Rare / Mythic"
+  source = "rare_mythic"
+  treatment = "any"
+
+[[slots]]
+label = "Foil Rare / Mythic"
+source = "rare_mythic"
+foil = true
+
+[[slots]]
+label = "Rare / Mythic"
+source = "rare_mythic"
+treatment = "any"
+foil_odds = 0.5
+
+[[slots]]
+label = "Rare / Mythic"
+source = "rare_mythic"
+treatment = "any"
+count = 3
+
+[[slots]]
+label = "Full-Art / Special Land"
+source = "special_land"
+foil = true
+
+[[slots]]
+label = "Foil Token"
+source = "token"
+foil = true
+placeholder = "Double-Sided Token"
